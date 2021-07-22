@@ -17,10 +17,12 @@ public class ConsoleRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        categoryService.register(new Category("Appliances"));
-        Category category = categoryService.findCategory(1);
-        productService.add(new Product("dishwasher",category,5000));
+        /*categoryService.register(new Category("Appliances"));
+        categoryService.register(new Category("Vegetables"));
 
+        productService.add(new Product("eggplant", categoryService.findCategory(2), 2000));
+        productService.add(new Product("zucchini", categoryService.findCategory(2), 1000));
+        productService.add(new Product("dishwasher", categoryService.findCategory(1), 8000));*/
 
     }
 }
